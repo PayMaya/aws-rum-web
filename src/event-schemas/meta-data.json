@@ -5,7 +5,7 @@
     "type": "object",
     "properties": {
         "version": {
-            "const": "1.0.0",
+            "const": "1.1.0",
             "type": "string",
             "description": "Schema version."
         },
@@ -63,7 +63,11 @@
         "domain": {
             "type": "string"
         },
-        "pageTags": { "type": "array", "items": { "type": "string" } }
+        "pageTags": { "type": "array", "items": { "type": "string" } },
+        "application": {
+            "type": "object",
+            "description": "Application-specific metadata"
+        }
     },
     "additionalProperties": false,
     "required": ["version", "domain"]

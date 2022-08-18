@@ -133,7 +133,8 @@ export const defaultConfig = (cookieAttributes: CookieAttributes): Config => {
         sessionSampleRate: 1,
         telemetries: [],
         useBeacon: true,
-        userIdRetentionDays: 30
+        userIdRetentionDays: 30,
+        applicationMetadata: {}
     };
 };
 
@@ -182,6 +183,7 @@ export type Config = {
     telemetries: Telemetry[];
     useBeacon: boolean;
     userIdRetentionDays: number;
+    applicationMetadata: object;
 };
 
 /**
